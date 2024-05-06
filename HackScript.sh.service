@@ -1,0 +1,12 @@
+[Unit]
+Description=HackScript.sh stress.sh
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/HackScript.sh/stress.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
